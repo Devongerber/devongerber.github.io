@@ -55,6 +55,9 @@ body {
 	padding: 0;
 	padding-bottom: 70px;
 	width: 100%;
+	background: url('2274.jpg');
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.9;
 }
 .bg-image img {
 	width: 100%;
@@ -81,6 +84,11 @@ body {
 	height: 100%;
 	margin: 0 auto;
 
+}
+h1 {
+	color: #5A6169;
+  	font: italic bold 60px Georgia, Serif;
+  	text-shadow: -3px 2px 0 #e9ecef, -7px 3px 0 #0a0e27;
 }
 .box1 {
 	position: relative;
@@ -234,6 +242,7 @@ h1 {
 	text-decoration: italic;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding-bottom: 300px;
+	background-color: #e9ecef;
 }
 .ref-left {
 	padding: 30px;
@@ -298,7 +307,7 @@ footer {
 .topnav .search-container button:hover {
   background: #ccc;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:817px) {
 img {
     width:100%;
 }
@@ -354,5 +363,8 @@ img {
 }
 .card-whole {
 	width: 100%;
+}
+h1 {
+	max-width: 100%;
 }
 }
