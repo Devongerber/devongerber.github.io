@@ -111,12 +111,6 @@ header .social-info li a:hover {
   color: #187c34;
 }
 
-  .carousel-inner > .carousel-item > img,
-  .carousel-inner > .carousel-item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-
 /*#banner {
   background-size: cover;
   background-image: url("");
