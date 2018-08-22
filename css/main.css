@@ -55,11 +55,12 @@ ul li {
 .menu .navbar-default .navbar-nav > li > a:hover {
   color: #187c34;
 }
-.menu .navbar-default .navbar-nav > li > .active a:
+.menu .navbar-default .navbar-nav > li > .active a
 .menu .navbar-default .navbar-nav > li > .active a:hover
-.menu .navbar-default .navbar-nav > li > .active a:focus{
+.menu .navbar-default .navbar-nav > li > .active a:focus {
+
   color: #187c34;
-    font-weight: 300;
+  font-weight: 300;
 }
 .menu .navbar-nav {
   float: none;
@@ -145,11 +146,12 @@ header .social-info li a:hover {
 }*/
 
 #banner {
-  background: linear-gradient( rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7) ), url('../images/Devon_Main_test.png') no-repeat fixed;
+  background-color: black;
+  background: linear-gradient( rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url("../images/Devon_Main_test.jpg") no-repeat fixed);
   width: 100%;
   height: 100%;
-  height:calc(80% - 1px);
   background-size: 100% auto;
+  height:calc(80% - 1px);
   position: relative;
   background-position: center top;
   background-size: cover;
@@ -555,14 +557,10 @@ footer p {
   margin-top: 10px;
   margin-bottom: 0;
 }
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
  .powerpoint {
   position: center;
     padding: 50px;
-    background-color: #e9ecef;
+    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 75%;
     height: auto;
@@ -570,10 +568,47 @@ footer p {
  .video-1 {
     width: 50%;
     height: auto;
-    background-color: #e9ecef;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+   
 }
 .illustrator {
   padding: 100px;
-  background-color: #e9ecef;
+  background-color: #fff;
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
+.w1 {
+  height: auto;
+  width: 25%;
+
+}
+.w2 {
+  height: auto;
+  width: 25%;
+
+}
+.w3 {
+  height: auto;
+  width: 25%;
+
+}
+#wireframes {
+  display: block;
+  text-align: center;
+}
+#tiny {
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tiny1 {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tiny-text {
+  font-size: 24px;
+  text-align: center;
+  padding: 30px;
+
+}
