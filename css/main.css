@@ -210,16 +210,16 @@ input::-webkit-input-placeholder {
 }
 
 #learn_more {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 #learn_more .learn_more-wrapper {
-  padding: 20px 0;
+  padding: 10px 0;
     margin: 0 auto;
 }
 #learn_more .block {
   cursor: pointer;
   text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 #learn_more .block:hover .icon i {
   color: #fff;
@@ -276,6 +276,7 @@ input::-webkit-input-placeholder {
 
 .thumbnail {
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #latest-readings {
