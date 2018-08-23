@@ -572,12 +572,30 @@ footer p {
     background-color: #fff;
    
 }
-.illustrator {
-  padding: 100px;
+.logos {
+  padding: 50px;
+  background-color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+
+}
+.lolo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.ill {
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   text-align: center;
   width: 50%;
-  height: auto;
+  vertical-align: center;
+
 }
 .w1 {
   height: auto;
