@@ -18,6 +18,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -44,54 +45,262 @@
 
 
 
-    <header class="bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-xs-6 col-sm-3">
-                    <a href="index.html" class="logo">
-                        <p>Devon Gerber</p>
-                    </a>
+
+<style>
+ .navbar {
+     height: 60px;
+     background-color: transparent;
+     border: none;
+     color: white;
+     z-index: 100;
+     transition: background-color 1s ease 0s;
+}
+ .navbar-default .navbar-brand {
+     margin-top: 10px;
+     color: #fff;
+}
+ .navbar-default .navbar-brand:hover {
+     color: #428bca;
+     border: 1px solid #FCFCFC;
+}
+ .navbar-default .navbar-nav > li > a {
+     color: #fff;
+     margin: 10px 5px 5px 5px;
+     text-decoration: none;
+     position: relative;
+}
+.navbar-default .navbar-nav > li > a:before { 
+     content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar-default .navbar-nav > li > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+     color: #428bca;
+     border: 1px solid #FCFCFC;
+}
+}
+ .navbar-default .navbar-nav > li > a:visited {
+     color: #fff;
+     text-decoration: none;
+}
+ .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+     background-color: transparent;
+     color: #ECA400;
+}
+ .navbar-default .navbar-toggle {
+     border-color: #FCFCFC;
+}
+ .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+     background-color: #353535;
+}
+ .navbar-default .navbar-toggle .icon-bar {
+     color: #fff;
+     background-color: #353535;
+}
+ .navbar-default .navbar-collapse.collapse.in ul {
+     background-color: #353535;
+}
+/* Solid class attached on scroll past first section */
+ .navbar.solid {
+     background-color: rgba(53, 53, 53, 0.0);
+     transition: background-color 1s ease 0s;
+     box-shadow: 0 0 4px grey;
+}
+ .navbar.solid .navbar-brand {
+     color: #353535;
+     transition: color 1s ease 0s;
+}
+ .navbar.solid .navbar-nav > li > a {
+    color: transparent;
+    transition: color 1s ease 0s;
+    display: none;
+}
+
+
+
+.bar {
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px 0 0 20px;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: transparent;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+
+
+.bar.solid1 {
+    transform: translateX(-100px);
+    transition: transform 2s;
+
+}
+@keyframes wobble {
+  33% {
+  transform: translateX(-50px);
+  }
+  66% {
+  transform: translateX(50px);
+  } }
+.bar.solid1 .bar1{
+    width: 30px;
+    height: 2px;
+    background-color: #353535;
+    transition: background-color 1s ease 0s;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+.bar.solid1 .bar2{
+    width: 30px;
+    height: 2px;
+    background-color: #353535;
+    transition: background-color 1s ease 0s;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+.bar.solid1 .bar3{
+    width: 30px;
+    height: 2px;
+    background-color: #353535;
+    transition: background-color 1s ease 0s;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 250px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 30px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 24px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dropdown .dropdown-content.show {
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffff;
+}
+</style>
+
+
+
+<div class="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                    
+                        <a href="index.html" class="navbar-brand">Devon Gerber</a>
                 </div>
-                <div class="col-md-7 col-xs-6 col-sm-6">
-                    <div class="menu">
-                        <nav class="navbar navbar-default" role="navigation">
-                            <div class="container-fluid">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    </button>
-                                </div>
+                       
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav navbar-nav">
+                            
+                                <div class="collapse navbar-collapse" id="navbar">
+                                    <ul class="nav navbar-nav navbar-right">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="portfolio.html">Portfolio</a></li>
                                         <li><a href="music.html">Music</a></li>
                                         <li><a href="references.html">References</a></li>
                                         <li><a href="skills.html">Skills</a></li>
-                                        
+                                    <div class="dropdown">
+                                        <div class="bar" onclick="myFunction(this)">
+                                              <div class="bar1"></div>
+                                              <div class="bar2"></div>
+                                              <div class="bar3"></div>
+                                              <span class="sr-only">Toggle navigation</span>
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <a href="index.html"><i class="fa fa-home"></i></a>
+                                            <a href="portfolio.html"><i class="fa fa-folder-open"></i></a>
+                                            <a href="music.html"><i class="fa fa-music"></i></a>
+                                            <a href="references.html"><i class="fa fa-users"></i></a>
+                                            <a href="skills.html"><i class="fa fa-tasks"></i></a>
+                                        </div>
+                                    </div>
+
+                                        </div>
+
                                     </ul>
+                                    
+                                     
+                                        <ul class="social-info">
+                                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    
                                   
                                 </div><!-- /.navbar-collapse -->
+                               
+
                             </div><!-- /.container-fluid -->
-                        </nav>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-12 col-sm-3">
-                    <ul class="social-info">
-                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </header>
+        </nav>
 
     
 
@@ -238,6 +447,7 @@
             </div>
         </div>
     </section>
+</div>
 
 <script>
     $('.carousel').carousel()
@@ -245,34 +455,53 @@
 </script>
 
 <script>
-   (function ($) {
-    $(document).ready(function(){
 
-    // hide header first
-    $("header").hide();
 
-    // fade in header
-    $(function () {
-        $(window).scroll(function () {
-
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 50) {
-                $('header').fadeIn();
-            } else {
-                $('header').fadeOut();
-        }
+</script>
+<script>
+$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
         });
-    });
-
 });
-  }(jQuery));
-
-   jQuery(document).ready(function(){
-  if($(window).width() > 480){
-    $('header').hide();
-  }
+</script>
+<script>
+$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) { 
+              $('.bar').addClass('solid1');
+          } else {
+              $('.bar').removeClass('solid1');
+          }
+        });
 });
-
+</script>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+<script>
+    $(document).ready(function(){
+$('.bar').click(function(){
+  $('.dropdown-content').toggleClass('show');
+});
+$(document).click(function(event) { 
+    if(!$(event.target).closest('.bar').length) {
+        if($('.dropdown-content').is(":visible")) {
+            $('.dropdown-content').toggleClass('show');
+        }
+    }        
+});
+});
 </script>
 
 
