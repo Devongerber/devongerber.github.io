@@ -613,15 +613,15 @@ footer p {
 /* No column padding */
 .bgfbox .col-md-4 {
   padding: 5px;
-  border: solid black 3px;
+  border: solid black 6px;
 }
 .bgfbox .col-md-6 {
   padding: 5px;
-  border: solid black 3px;
+  border: solid black 6px;
 }
 /* Add padding to content */
 .bgfbox .bgfbox-content {
-  padding: 150px;
+  padding: 50px;
   height: 500px;
   
 }
