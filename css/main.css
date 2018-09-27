@@ -640,7 +640,7 @@ footer p {
 
 }
 .bg-2 {
-  background: url("../images/Ass-3-3-01.png") no-repeat center center;
+  background: url("../images/Ass-3.3.jpg") no-repeat center center;
   background-size: cover;
   
 }
@@ -650,14 +650,24 @@ footer p {
   
 }
 .bg-4 {
-  background: url("../images/img1.png") no-repeat center center;
-  background-size: cover;
+  background: url("../images/img1.jpg") no-repeat center center;
+  background-size: contain;
   
 }
 
 .bg-6 {
-  background: url("../images/img2.png") no-repeat center center;
-  background-size: cover;
+  background: url("../images/img2.jpg") no-repeat center center;
+  background-size: contain;
+}
+.bg-7 {
+  background: url("../images/img3.jpg") no-repeat center center;
+  background-size: contain;
+  
+}
+
+.bg-8 {
+  background: url("../images/img4.jpg") no-repeat center center;
+  background-size: contain;
 }
 
 
