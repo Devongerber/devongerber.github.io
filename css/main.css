@@ -637,11 +637,11 @@ footer p {
 /* No column padding */
 .bgfbox .col-md-4 {
   padding: 5px;
-  border: solid black 6px;
+  border: dotted black 6px;
 }
 .bgfbox .col-md-6 {
   padding: 5px;
-  border: solid black 6px;
+  border: dotted black 6px;
 }
 /* Add padding to content */
 .bgfbox .bgfbox-content {
@@ -682,7 +682,7 @@ footer p {
   
 }
 .bg-3 {
-  background: url("../images/Ass-2-2.png") no-repeat center center;
+  background: url("../images/Ass-5-2-01.png") no-repeat center center;
   background-size: cover;
   
 }
