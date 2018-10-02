@@ -78,6 +78,9 @@ ul li {
   background: linear-gradient(to bottom, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) ), linear-gradient(to top, rgba(0,0,0,0) 50%, rgba(0,0,0,1) ), url("../images/Devon_Main_test.jpg") no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   position: relative;
   background-position: center top;
   padding: 100px 0;
@@ -85,9 +88,10 @@ ul li {
 }
 @media only screen and (max-width: 991px) {
   #banner {
-    height: auto;
-    width: 100%;
     background-attachment: scroll;
+    width: 100%;
+    
+
   }
 
 }
