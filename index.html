@@ -765,6 +765,27 @@ $(".overlay").on("click", function() {
 });
 });
 </script>
+<script>
+    $(document).ready(function() {
+  $("a").on("click touchend", function(e) {
+    var el = $(this);
+    var link = el.attr("href");
+    window.location = link;
+  });
+});
+let ___SCROLL_TOP_LAST___ = 0;
+$("a").on("touchstart", function() {
+___SCROLL_TOP_LAST___ = $('body').scrollTop();
+});
+$("a").on("touchend", function() {
+var el = $(this);
+var link = el.attr("href");
+if($('body').scrollTop() === ___SCROLL_TOP_LAST___) {
+window.location = link;
+}
+});
+
+</script>
 
 
 
