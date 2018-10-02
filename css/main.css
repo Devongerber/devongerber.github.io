@@ -671,6 +671,8 @@ footer p {
 /* No column padding */
 .bgfbox1 .col-md-6 {
   padding: 5px;
+  position: relative;
+  text-align: center;
 }
 /* Add padding to content */
 .bgfbox1 .bgfbox-content1 {
@@ -678,6 +680,11 @@ footer p {
   
 }
 
+@media only screen and (max-width: 991px) {
+  .bgfbox1 .bgfbox-content1 {
+    padding: 100px;
+  }
+}
 
 /* Colors */
 .bgfbox .bgfbox-first a {
@@ -768,6 +775,7 @@ footer p {
   padding-bottom: 100px;
   color: #fff;
   background-color: #212529;
+
 }
 .bgfbox1 h2, .bgfbox1 h4 {
   font-family: 'Notable', sans-serif;
@@ -792,8 +800,8 @@ footer p {
   -moz-background-size: contain;
   -o-background-size: contain;
   -webkit-filter: brightness(100%);
-  position: relative;
   padding: 50px 0;
+ 
   
 }
 
@@ -805,6 +813,7 @@ footer p {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+
 }
 
 .home2 {
@@ -814,8 +823,8 @@ footer p {
   -moz-background-size: contain;
   -o-background-size: contain;
   -webkit-filter: brightness(100%);
-  position: relative;
   padding: 50px 0;
+  
 
 }
 
