@@ -226,6 +226,185 @@
 .dropdown:hover .dropbtn {
     background-color: #ffffff;
 }
+
+@media only screen and (max-width: 991px) {
+    .navbar-default {
+  background-color: transparent;
+  border-top: 0px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+  border-left: 0px solid rgba(0, 0, 0, 0.5);
+  border-right: 0px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  padding-top: 9px;
+  padding-bottom: 26px;
+}
+
+.navbar.navbar-default .navbar-collapse {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-nav>li {
+  border-right: 1px solid white;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 45px;
+}
+
+.navbar-nav {
+  padding-top: 20px;
+}
+
+.navbar-nav>li:last-child {
+  border: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  margin-top: 19px;
+  margin-right: 43px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-size: 15px;
+  line-height: 1px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+  background-color: rgba(255, 198, 0, 0);
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+
+
+.navbar-default .navbar-nav>li>a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width .4s ease, background-color .4s ease;
+  margin-top: 12px;
+}
+
+.navbar-default .navbar-nav>li>a:hover:after {
+  width: 100%;
+  background: #FFC600;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: rgba(255, 198, 0, 0);
+  border-bottom: solid #FFC600;
+  border-bottom-width: 1px;
+  height: 29px;
+}
+
+
+
+  .navbar-collapse {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+  }
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: red;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+  }
+  .navbar-default .navbar-collapse.collapse.in ul {
+    background-color: transparent;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .modal-nav-content {
+    width: 100%;
+    height: auto;
+  }
+  .modal-nav-body {
+    margin-top: 100px;
+  }
+  .modal-nav-body ul {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .modal-nav-body ul li {
+    text-align: center;
+    font-size: 130%;
+    padding: 8px;
+    text-transform: uppercase;
+  }
+  .bar {
+    display: none;
+  }
+   .navbar.solid .navbar-nav > li > a {
+    color: #fff;
+    transition: color 1s ease 0s;
+    display: inline-block;
+}
+}
 </style>
 
 
@@ -233,28 +412,30 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                                            
                     
                         <a href="index.html" class="navbar-brand">Devon Gerber</a>
                 </div>
+                    <div class="overlay">
+
+                    </div>
                        
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                             
-                                <div class="collapse navbar-collapse" id="navbar">
+                                <div class="collapse navbar-collapse" id="myNavbar">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="portfolio.html">Portfolio</a></li>
                                         <li><a href="music.html">Music</a></li>
                                         <li><a href="references.html">References</a></li>
                                         <li><a href="skills.html">Skills</a></li>
-                                        <div class="dropdown">
+                                        
+                                    <div class="dropdown">
                                         <div class="bar" onclick="myFunction(this)">
                                               <div class="bar1"></div>
                                               <div class="bar2"></div>
@@ -269,10 +450,14 @@
                                             <a href="skills.html"><i class="fa fa-tasks"></i></a>
                                         </div>
                                     </div>
-                                      </ul>
-                                    </div>
 
-                                    <ul class="social-info">
+
+                                        </div>
+
+                                    </ul>
+                                    
+                                     
+                                        <ul class="social-info">
                                         <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                                         <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -283,12 +468,25 @@
                                
 
                             </div><!-- /.container-fluid -->
-                        </div>
-                    </div>
-                </div>
+                        
+                
             </div>
         </nav>
-
+<div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-nav-content">
+      <div class="modal-nav-body">
+        <ul>
+          <li>Brand</li>
+          <li>About Me</li>
+          <li>Game</li>
+          <li>Hobbies</li>
+          <li>Contact Me</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
     
 
 
@@ -470,6 +668,20 @@ $(document).click(function(event) {
             $('.dropdown-content').toggleClass('show');
         }
     }        
+});
+});
+</script>
+<script>
+    $(document).ready(function(){
+    $(".navbar-toggle").on("click", function() {
+
+  $(".overlay").fadeIn("slow");
+
+});
+$(".overlay").on("click", function() {
+
+  $(this).fadeOut();
+  $(".navbar-collapse").removeClass("in").addClass("collapse");
 });
 });
 </script>

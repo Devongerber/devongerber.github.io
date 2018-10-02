@@ -406,6 +406,11 @@ ul li {
 }
 #subscribe .form-inline .form-group {
   position: relative;
+  text-align: center;
+}
+#subscribe .form-inline .form-group .form-control {
+  position: relative;
+  display: inline-block;
 }
 #subscribe .form-inline .form-group input {
   width: 200px;
