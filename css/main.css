@@ -618,14 +618,8 @@ footer p {
     height: 100%;
     width: 100%;
   }
-  .bgfbox1 .col-md-6 {
-    padding: 100px !important;
-  }
-  .bgfbox1 .col-md-6 .bgfbox-content1 {
-    height: 200px !important;
-    width: 100% !important;
 
-  }
+
   .bgfbox1 .col-md-6 h4 {
     width: 100% !important;
     height: 100% !important;
@@ -671,13 +665,12 @@ footer p {
 /* No column padding */
 .bgfbox1 .col-md-6 {
   padding: 5px;
-  position: relative;
-  text-align: center;
+
 }
 /* Add padding to content */
 .bgfbox1 .bgfbox-content1 {
   
-  text-align: center;
+ 
   height: 100%;
   width: 100%;
   
@@ -743,19 +736,7 @@ footer p {
 }
 
 /* Hover Animation */
-.bg-hover-fade {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
+
 .bg-hover-fade:hover, 
 .bg-hover-fade:focus, 
 .bg-hover-fade:active {
@@ -791,17 +772,33 @@ footer p {
 }
 
 @media only screen and (max-width: 991px) {
+  .bgfbox1 .bgfbox-content1 {
+    height: auto;
+    max-width: 100%;
+    float: none;
+  }
+  .bgfbox1 .bgfbox1-text {
+    height: 50px;
+  }
   .bgfbox1 .bgfbox-content1 .home1 {
     background-size: 100% auto;
     -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
+  float: none;
+  max-width: 100%;
+  display: block;
+  
   }
   .bgfbox1 .bgfbox-content1 .home2 {
     background-size: 100% auto;
     -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
+  float: none;
+  max-width: 100%;
+  display: block;
+
   }
 }
 
@@ -835,10 +832,10 @@ footer p {
 
 .home2 {
   background: url("../images/img2.jpg") no-repeat center center;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
   -webkit-filter: brightness(100%);
   padding: 50px 0;
   background-size: 100% auto;
