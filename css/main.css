@@ -792,6 +792,8 @@ footer p {
   -moz-background-size: contain;
   -o-background-size: contain;
   -webkit-filter: brightness(100%);
+  position: relative;
+  padding: 50px 0;
   
 }
 
@@ -812,6 +814,8 @@ footer p {
   -moz-background-size: contain;
   -o-background-size: contain;
   -webkit-filter: brightness(100%);
+  position: relative;
+  padding: 50px 0;
 
 }
 
