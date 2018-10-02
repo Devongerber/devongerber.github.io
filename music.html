@@ -227,7 +227,16 @@
     background-color: #ffffff;
 }
 
+@media (hover: none) {
+  li a:after {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 991px) {
+    .touch li a:after {
+  display: none;
+}
     .navbar-default {
   background-color: transparent;
   border-top: 0px solid rgba(0, 0, 0, 0.5);
@@ -301,7 +310,7 @@
 
 .navbar-default .navbar-nav>li>a:after {
   content: '';
-  display: block;
+  opacity: 0;
   margin: auto;
   height: 1px;
   width: 0px;
@@ -312,7 +321,7 @@
 
 .navbar-default .navbar-nav>li>a:hover:after {
   width: 100%;
-  background: #FFC600;
+  opacity: 1;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -374,7 +383,7 @@
   }
   .navbar-nav>li>a {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px !important;
   }
   .modal-nav-content {
     width: 100%;
@@ -750,6 +759,12 @@ $(".overlay").on("click", function() {
   $(".navbar-collapse").removeClass("in").addClass("collapse");
 });
 });
+</script>
+<script>
+    (function(html) {
+  html.className += ('ontouchstart' in window) ? ' touch ' : ' no-touch ';
+})(document.documentElement);
+
 </script>
 
     <footer class="wow fadeInUp" data-wow-delay=".8s">
