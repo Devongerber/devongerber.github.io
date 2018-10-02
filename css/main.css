@@ -788,6 +788,9 @@ footer p {
 .home1 {
   background: url("../images/img1.jpg") no-repeat center center;
   background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   -webkit-filter: brightness(100%);
   
 }
@@ -805,6 +808,9 @@ footer p {
 .home2 {
   background: url("../images/img2.jpg") no-repeat center center;
   background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   -webkit-filter: brightness(100%);
 
 }
