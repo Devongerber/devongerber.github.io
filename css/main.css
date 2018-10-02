@@ -680,11 +680,7 @@ footer p {
   
 }
 
-@media only screen and (max-width: 991px) {
-  .bgfbox1 .bgfbox-content1 {
-    padding: 100px;
-  }
-}
+
 
 /* Colors */
 .bgfbox .bgfbox-first a {
@@ -791,7 +787,11 @@ footer p {
   text-align: center;
 }
 
-
+@media only screen and (max-width: 991px) {
+  .bgfbox1 .bgfbox-content1 {
+    
+  }
+}
 
 .home1 {
   background: url("../images/img1.jpg") no-repeat center center;
@@ -801,6 +801,9 @@ footer p {
   -o-background-size: contain;
   -webkit-filter: brightness(100%);
   padding: 50px 0;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
  
   
 }
@@ -824,6 +827,9 @@ footer p {
   -o-background-size: contain;
   -webkit-filter: brightness(100%);
   padding: 50px 0;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
   
 
 }
