@@ -645,16 +645,16 @@ footer p {
 }
 /* No column padding */
 .bgfbox .col-md-4 {
-  padding: 5px;
-  border: dotted black 6px;
+  
+
 }
 .bgfbox .col-md-6 {
-  padding: 5px;
-  border: dotted black 6px;
+  
+ 
 }
 /* Add padding to content */
 .bgfbox .bgfbox-content {
-  padding: 50px;
+  padding: 20px;
   height: 500px;
   
 }
@@ -688,37 +688,44 @@ footer p {
 .bg-1 {
   background: url("../images/Ass-4.0-01.jpg") no-repeat center center;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .bg-2 {
   background: url("../images/Ass-3.3.jpg") no-repeat center center;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 .bg-3 {
   background: url("../images/Ass-5-2-01.png") no-repeat center center;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 .bg-4 {
   background: url("../images/img1.jpg") no-repeat center center;
   background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 
 .bg-6 {
   background: url("../images/img2.jpg") no-repeat center center;
   background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bg-7 {
   background: url("../images/img3.jpg") no-repeat center center;
   background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 
 .bg-8 {
   background: url("../images/img4.jpg") no-repeat center center;
   background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -772,6 +779,18 @@ footer p {
 }
 
 @media only screen and (max-width: 991px) {
+  .bgfbox .bgfbox-content {
+    height: 250px;
+    padding: 5px;
+  }
+  .bgfbox .col-md-4 {
+  padding: 5px;
+
+}
+.bgfbox .col-md-6 {
+  padding: 5px;
+ 
+}
   .bgfbox1 .bgfbox-content1 {
     height: auto;
     max-width: 100%;
