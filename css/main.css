@@ -83,8 +83,13 @@ ul li {
   padding: 100px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media only screen and (max-width: 991px) {
+  #banner {
+    height: auto;
+    width: 100%;
+  }
 
-
+}
 #banner .block > p {
   margin-bottom: 65px;
 }
@@ -765,12 +770,16 @@ footer p {
 }
 .bgfbox1 h4 {
   margin-bottom: 15px;
+  padding-bottom: 10px;
 }
 .bgfbox1 p, a {
   font-family: 'Exo', sans-serif;
   font-size: 16px;
   text-align: center;
 }
+
+
+
 .home1 {
   background: url("../images/img1.jpg") no-repeat center center;
   background-size: contain;
