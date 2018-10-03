@@ -50,7 +50,7 @@
 
 <style>
  .navbar {
-     height: 60px;
+     height: 62px;
      background-color: transparent;
      border: none;
      color: white;
@@ -58,8 +58,24 @@
      transition: background-color 1s ease 0s;
 }
  .navbar-default .navbar-brand {
+    position: relative;
      margin-top: 10px;
+     left: 80px;
      color: #fff;
+
+}
+.social {
+    transform: translateY(-60px); 
+    transition: transform 2s;
+}
+@media only screen and (max-width: 991px) {
+    .social {
+    transform: translateY(-70px); 
+    transition: transform 2s;
+    }
+    .navbar-default .navbar-brand {
+        left: 25px;
+    }
 }
  .navbar-default .navbar-brand:hover {
      color: #428bca;
@@ -69,6 +85,7 @@
      color: #fff;
      margin: 10px 5px 5px 5px;
 }
+
 .navbar-default .navbar-nav > li > a:before { 
      content: "";
   position: absolute;
@@ -474,9 +491,9 @@
                                     
                                      
                                         <ul class="social-info">
-                                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter social"></i></a></li>
+                                        <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram social"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin social"></i></a></li>
                                         </ul>
                                     
                                   

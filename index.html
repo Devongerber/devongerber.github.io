@@ -48,7 +48,7 @@
 
 <style>
  .navbar {
-     height: 60px;
+     height: 62px;
      background-color: transparent;
      border: none;
      color: white;
@@ -56,12 +56,15 @@
      transition: background-color 1s ease 0s;
 }
  .navbar-default .navbar-brand {
+    position: relative;
      margin-top: 10px;
+     left: 80px;
      color: #fff;
 }
  .navbar-default .navbar-brand:hover {
      color: #428bca;
      border: 1px solid #FCFCFC;
+
 }
  .navbar-default .navbar-nav > li > a {
      color: #fff;
@@ -69,6 +72,23 @@
      text-decoration: none;
      position: relative;
 }
+
+.social {
+    transform: translateY(-60px); 
+    transition: transform 2s;
+}
+@media only screen and (max-width: 991px) {
+    .social {
+    transform: translateY(-70px); 
+    transition: transform 2s;
+    }
+    .navbar-default .navbar-brand {
+        left: 25px;
+    }
+}
+
+
+
 .navbar-default .navbar-nav > li > a:before { 
      content: "";
   position: absolute;
@@ -386,6 +406,7 @@
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
   }
   .navbar-fixed-top {
     top: 0;
@@ -489,9 +510,9 @@
                                     
                                      
                                         <ul class="social-info">
-                                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter social"></i></a></li>
+                                        <li><a href="https://www.instagram.com/devongerbermusic/" target="_blank"><i class="fa fa-instagram social"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/devon-gerber-788b4a72/" target="_blank"><i class="fa fa-linkedin social"></i></a></li>
                                         </ul>
                                     
                                   
@@ -778,6 +799,7 @@ $(".overlay").on("click", function() {
 })(document.documentElement);
 
 </script>
+
 
 
 
