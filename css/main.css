@@ -517,7 +517,7 @@ footer p {
 }
 .w1 {
   height: auto;
-  width: 25%;
+  width: 35%;
 
 }
 .w2 {
@@ -528,7 +528,26 @@ footer p {
 .w3 {
   height: auto;
   width: 25%;
-
+}
+.w4 {
+  width: 50%;
+  padding: 20px;
+  float: left;
+}
+@media only screen and (max-width : 768px) {
+  .w4 {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .t .col-md-6 {
+      overflow: hidden;
+     margin: 0 auto;
+     max-height: 800px;
+  }
+}
+.wire1 {
+  background-color: #212529;
 }
 #wireframes {
   display: block;
@@ -548,6 +567,17 @@ footer p {
   text-align: center;
   padding: 30px;
 
+}
+.t {
+  text-align: center;
+}
+.bgfbox .wire1 p {
+  padding: 50px;
+}
+@media only screen and (max-width : 768px) {
+  .bgfbox .wire1 p {
+    padding: 0;
+  }
 }
 .navigator {
   visibility: hidden;
