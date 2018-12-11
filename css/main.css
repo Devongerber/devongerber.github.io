@@ -789,6 +789,16 @@ footer p {
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.bg-9 {
+  background: url("../images/Screen Shot 2018-12-10 at 7.43.13 PM.png") no-repeat center center;
+  background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bg-10 {
+  background: url("../images/Screen Shot 2018-12-10 at 7.43.32 PM.png") no-repeat center center;
+  background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 .bg-white.bg-hover-inverse:hover {
