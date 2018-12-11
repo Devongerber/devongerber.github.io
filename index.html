@@ -49,7 +49,7 @@
 
 <style>
  .navbar {
-     height: 70px;
+     height: 75px;
      background-color: transparent;
      border: none;
      color: white;
@@ -736,6 +736,20 @@
 </div>
 
 <script>
+            $(document).ready(function () {
+            $(window).scroll(function () {
+                //Method 1: Using addClass and removeClass
+                if ($(document).scrollTop() > 100) {
+                    $('.navbar-default').addClass('navbar-shrink');
+                } else {
+                    $('.navbar-default').removeClass('navbar-shrink');
+                }
+
+            });
+        });
+</script>
+
+<script>
     $(document).ready(function() {
         
     setTimeout(function(){
@@ -759,7 +773,7 @@ $(document).ready(function() {
         // Transition effect for navbar 
         $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) { 
+          if($(this).scrollTop() > 100) { 
               $('.navbar').addClass('solid');
           } else {
               $('.navbar').removeClass('solid');
@@ -772,7 +786,7 @@ $(document).ready(function() {
         // Transition effect for navbar 
         $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) { 
+          if($(this).scrollTop() > 100) { 
               $('.bar').addClass('solid1');
           } else {
               $('.bar').removeClass('solid1');
