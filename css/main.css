@@ -566,6 +566,11 @@ footer p {
   padding: 20px;
   float: left;
 }
+.w6 {
+  width: 75%;
+  height: auto;
+  text-align: center;
+}
 @media only screen and (max-width : 768px) {
   .w4 {
     width: 100%;
