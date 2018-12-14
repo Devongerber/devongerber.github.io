@@ -566,21 +566,30 @@ footer p {
   padding: 20px;
   float: left;
 }
+.w41 {
+  width: 100%;
+  padding: 20px;
+
+}
 .w6 {
-  width: 75%;
+  width: 100%;
   height: auto;
   text-align: center;
 }
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 990px) {
   .w4 {
     width: 100%;
     float: none;
     display: block;
   }
-  .t .col-md-6 {
+
+  .t {
       overflow: hidden;
      margin: 0 auto;
-     max-height: 800px;
+     height: 100%;
+  }
+  .t .col-md-6 {
+    padding-bottom: 20px;
   }
 }
 .wire1 {
