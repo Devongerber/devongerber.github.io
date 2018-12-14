@@ -75,7 +75,7 @@ ul li {
 }*/
 
 #banner {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) ), linear-gradient(to top, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.9) ), url("../images/alberto-restifo-4549-unsplash.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) ), linear-gradient(to top, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.9) ), url("../images/Beautiful-image.jpg") no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -515,7 +515,6 @@ footer p {
     width: 50%;
     height: auto;
     background-color: #fff;
-   
 }
 
 .logos {
