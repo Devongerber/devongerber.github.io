@@ -35,6 +35,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/lossless.js"></script>
         <script src="js/wow.min.js"></script>
         <script>
          new WOW(
@@ -49,7 +50,7 @@
 
 <style>
  .navbar {
-     height: 75px;
+     height: 80px;
      background-color: transparent;
      border: none;
      color: white;
@@ -59,14 +60,23 @@
 
  .navbar-default .navbar-brand {
     position: relative;
+    background: url('images/DGlogo2.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
      margin-top: 10px;
      bottom: 5px;
      left: 80px;
      color: #fff;
        font-family: 'Roboto Condensed', sans-serif;
+       transition: all 0.2s ease 0s;
+           box-shadow: 0 10px 16px 0 rgba(0,0,0,0.5), 0 10px 20px 0 rgba(0,0,0,0.5);
+
 }
  .navbar-default .navbar-brand:hover {
      color: #428bca;
+     border-radius: 50%;
      border: 1px solid #FCFCFC;
 
 }
@@ -150,18 +160,21 @@
 /* Solid class attached on scroll past first section */
  .navbar.solid {
      background-color: #212529;
-     transition: background-color 1s ease 0s;
      box-shadow: 0 0 4px grey;
+    transition: all 1s ease 0s;
 }
  .navbar.solid .navbar-brand {
-     color: #fff;
-     transition: color 1s ease 0s;
+    
+     width: 0px;
+     height: 0px;
+     visibility: hidden;
+     transition: all 0.1s ease 0s;
+     
 }
  .navbar.solid .navbar-nav > li > a {
-    color: transparent;
-    transition: color 1s ease 0s;
-    display: none;
+    transition: all 1s ease 0s;
 }
+
 
 
 
@@ -462,7 +475,6 @@
    .navbar.solid .navbar-nav > li > a {
     color: #fff;
     transition: color 1s ease 0s;
-    display: inline-block;
 }
 
 
@@ -485,7 +497,7 @@
                         <span class="icon-bar"></span>
                       </button>      
                     
-                        <a href="index.html" class="navbar-brand">Devon Gerber</a>
+                        <a href="index.html" class="navbar-brand"></a>
                 </div>
                     <div class="overlay">
 
@@ -669,6 +681,144 @@
     </section>
 
 
+<section class="bgfbox t" id="wireframes" data-spy="wireframes" data-target="#wireframes">
+    <div class="container-fluid">
+        <div class="row flex-row">
+            
+            <div class="col-md-6 col-md-push-6">
+                <div class="bgfbox-content wire1">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                <h2>Wearable Ring Design</h2>
+                <br>
+                <br>
+                <p>This was the mockup of the software that would go along with it.</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6 col-md-pull-6">
+            <div class="bgfbox-content">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+               <img src="images/Ring.png" class="w6">
+              
+                </div>
+                
+            </div>
+        </div>
+       
+    </div>
+
+</section>
+<section class="bgfbox t">
+    <div class="container-fluid">
+        <div class="row flex-row">
+
+            <div class="col-md-6">
+                <div class="bgfbox-content wire1">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                <h2>Look Up App</h2>
+                <br>
+                <br>
+                <p>We designed this app to combat phone addiction and built out a deck to pitch it.</p>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="col-md-6">
+            <div class="bgfbox-content">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+               <img src="images/Lookup.png" class="w6">
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="bgfbox t">
+    <div class="container-fluid">
+        <div class="row flex-row">
+            <div class="col-md-6 col-md-push-6">
+            <div class="bgfbox-content wire1">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                    <h2>Juvo App</h2>
+                    <br>
+                    <br>
+                    <p>I designed this app for a start-up that focuses on data driven health/fitness data that is personalized and connected to local studios.</p>
+                </div>
+                
+            </div>
+        </div>
+
+            <div class="col-md-6 col-md-pull-6">
+                <div class="bgfbox-content">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                <img src="images/Ring2.png" class="w6">
+                </div>
+            </div>
+        </div>
+
+            
+        
+    </div>
+
+</section>
+<section class="bgfbox t">
+    <div class="container-fluid">
+        <div class="row flex-row">
+            <div class="col-md-6">
+                <div class="bgfbox-content wire1">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                <h2>Intuit Design Sprint</h2>
+                <br>
+                <br>
+                <p>We designed this interface for a one day design sprint that was put on at UCSD by Intuit and Design Lab.</p> 
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="col-md-6">
+            <div class="bgfbox-content ww">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+               <img src="images/intuit1.png" class="w41">
+                <img src="images/intuit2.png" class="w4">
+                <img src="images/intuit3.png" class="w4">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
 <section class="bgfbox1">
     <div class="container-fluid">
         <div class="row flex-row">
@@ -782,6 +932,7 @@ $(document).ready(function() {
 });
 </script>
 <script>
+/*
 $(document).ready(function() {
         // Transition effect for navbar 
         $(window).scroll(function() {
@@ -793,6 +944,7 @@ $(document).ready(function() {
           }
         });
 });
+*/
 </script>
 <script>
 function myFunction(x) {
