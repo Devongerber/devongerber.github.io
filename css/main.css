@@ -786,14 +786,14 @@ footer p {
   
 }
 .bg-4 {
-  background: url("../images/img1.png") no-repeat center center;
+  background: url("../images/img1.jpg") no-repeat center center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 
 .bg-6 {
-  background: url("../images/img2.png") no-repeat center center;
+  background: url("../images/img2.jpg") no-repeat center center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -805,7 +805,7 @@ footer p {
 }
 
 .bg-8 {
-  background: url("../images/img4.png") no-repeat center center;
+  background: url("../images/img4.jpg") no-repeat center center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -914,7 +914,7 @@ footer p {
 }
 
 .home1 {
-  background: url("../images/img1.png") no-repeat center center;
+  background: url("../images/img1.jpg") no-repeat center center;
   background-size: 100% auto;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
