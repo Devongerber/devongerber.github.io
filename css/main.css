@@ -75,7 +75,7 @@ ul li {
 }*/
 
 #banner {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) ), linear-gradient(to top, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.9) ), url("../images/beautiful-image1.jpg") no-repeat center center;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 10%, rgba(0,0,0,0.9) ), url("../images/beautiful-image1.jpg") no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -768,19 +768,19 @@ footer p {
   margin-bottom: 50px;
 }
 .bg-1 {
-  background: url("../images/Post-it-01.png") no-repeat center center;
+  background: url("../images/Post-it-01.jpg") no-repeat center center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .bg-2 {
-  background: url("../images/Ass-9-2-01.png") no-repeat center center;
+  background: url("../images/move-01.jpg") no-repeat center center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 .bg-3 {
-  background: url("../images/Ass-5-2-01.png") no-repeat center center;
+  background: url("../images/Ass-9-2-01.jpg") no-repeat center center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -798,7 +798,7 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bg-7 {
-  background: url("../images/img3.png") no-repeat center center;
+  background: url("../images/img3.jpg") no-repeat center center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -810,12 +810,12 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bg-9 {
-  background: url("../images/Screen Shot 2018-12-10 at 7.43.13 PM.png") no-repeat center center;
+  background: url("../images/shopify1.jpg") no-repeat center center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bg-10 {
-  background: url("../images/Screen Shot 2018-12-10 at 7.43.32 PM.png") no-repeat center center;
+  background: url("../images/shopify2.jpg") no-repeat center center;
   background-size: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -942,7 +942,7 @@ footer p {
 }
 
 .home2 {
-  background: url("../images/img3.png") no-repeat center center;
+  background: url("../images/img3.jpg") no-repeat center center;
   background-size: 100% auto;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
