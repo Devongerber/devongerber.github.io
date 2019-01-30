@@ -14,6 +14,8 @@ $(function() {
 });
 
         $(document).ready(function () {
+          var topoffset = 50;
+
             $(window).scroll(function () {
                 
                 //Method 1: Using addClass and removeClass
@@ -26,4 +28,24 @@ $(function() {
                 }
 
             });
-        });
+
+                  $('.navbar a').click(function() {
+                if (location.pathname.replace(/^\//,'') ===
+                  this.pathname.replace(/^\//,'') &&
+                  location.hostname === this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top-topoffset+2
+                    }, 500);
+                    return false;
+                  } //target.length
+                } //click function
+              }); //smooth scrolling
+
+              $('body').scrollspy({
+                target: '.navbar',
+                offset: topoffset
+              });
+          });
