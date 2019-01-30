@@ -894,7 +894,7 @@ footer p {
     float: none;
   }
   .bgfbox1 .bgfbox1-text {
-    height: 50px;
+    height: 100px;
   }
   .bgfbox1 .bgfbox-content1 .home1 {
     background-size: 100% auto;
@@ -919,7 +919,7 @@ footer p {
 }
 
 .home1 {
-  background: url("../images/img1.jpg") no-repeat center center;
+  background: url("../images/shopify1.jpg") no-repeat center center;
   background-size: 100% auto;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
