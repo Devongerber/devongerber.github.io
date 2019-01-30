@@ -12,3 +12,18 @@ $(function() {
     }
   });
 });
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                
+                //Method 1: Using addClass and removeClass
+                if ($(document).scrollTop() > 100) {
+                    $('.navbar-default').addClass('navbar-shrink');
+                    $('.navbar-default').removeClass('navbar-fade');
+                } else {
+                    $('.navbar-default').removeClass('navbar-shrink');
+                    $('.navbar-default').addClass('navbar-fade');
+                }
+
+            });
+        });

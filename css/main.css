@@ -97,13 +97,18 @@ ul li {
 }
 .navbar-default {
   padding: 150px 0;
-  -webkit-transition: padding 1s linear;
-  transition: padding 1s linear;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 .navbar-default.navbar-shrink {
   padding: 10px 0;
-  transition: padding 1s linear;
-    -webkit-transition: padding 1s linear
+  transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.navbar-default.navbar-fade {
+  padding: 150px 0;
+  transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 
 #banner .block > p {
