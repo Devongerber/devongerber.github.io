@@ -617,6 +617,11 @@ footer p {
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#tiny2 {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .tiny-text {
   font-size: 24px;
   text-align: center;
@@ -762,6 +767,10 @@ footer p {
   height: 100%;
   width: 100%;
   
+}
+
+.img-rounded {
+  border-radius: 6%;
 }
 
 
